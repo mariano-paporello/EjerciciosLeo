@@ -4,16 +4,25 @@
 
 ## Stack
 
-<h5 align="center">App on Node JS. Code in Typescript. Express Server.</h5>
-<h5 align="center">Auxiliary Libraries: Axios</h5>
+<h4 >App on Node JS. Code in Typescript. Express Server.</h4>
+<h4 >Auxiliary Libraries: Axios</h4>
 <BR />
 <br />
 
-## Endpoints Documentation
 
+## Exercises pdf
+
+<a href="/Ejercicios.pdf" download="Exercises">Download</a>
+
+## Endpoints Documentation
+The documentation is in the home endpoint
+EX:
 ```http
-/
+http://localhost:8080/
 ```
+
+## Endpoints of the Exercises
+
 
 ---
 
