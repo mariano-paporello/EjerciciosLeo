@@ -4,7 +4,7 @@ info:
   description: >-
     **This is the documentation for the exercises.**
 
-    
+
     **Here you can try the three exercises and see all the posible responses.**
   version: 1.0.0
 servers:
@@ -34,6 +34,15 @@ paths:
 
 
         - "**departamento**": String
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:              
+                calle: Avenida corrientes
+                provincia: Buenos Aires
+                altura: 400
       responses:
         '200':
           description: OK
@@ -138,7 +147,7 @@ paths:
       summary: distanceCalculator
       description: >-
         **Calculate the distance ,between the normalized direction entered
-        and the Obelisc of Buenos Aires, and return if it's in less or more than
+        and the Obelisk of Buenos Aires, and return if it's in less or more than
         5 kilometers.**
 
 
@@ -146,6 +155,13 @@ paths:
 
 
         - "**direccion**":String
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:              
+                direccion: "AV CORRIENTES 400, Comuna 1, Ciudad Autónoma de Buenos Aires" 
       responses:
         '200':
           description: OK
@@ -186,11 +202,11 @@ paths:
                 example-0:
                   summary: 200 less than 5km
                   value:
-                    msg: Estas a menos de 5 Kilómetros del Obelisco
+                    msg: Estas a menos de 5 Kilómetros del Obelisko
                 example-1:
                   summary: 200 more than 5km
                   value:
-                    msg: Estas lejos del Obelisco
+                    msg: Estas lejos del Obelisko
         '400':
           description: Bad Request
           headers:
@@ -246,6 +262,13 @@ paths:
         **Obligatory parameters:**
 
         - "**pais**": String
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:              
+                pais: Brazil 
       responses:
         '200':
           description: OK
