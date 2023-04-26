@@ -27,7 +27,7 @@ http://localhost:8080/
 ## Endpoints of the Exercises
 
 First exercise
-Direction normalizer
+**Direction normalizer**
 EX:
 ```http
 http://localhost:8080/api/normalize
@@ -35,7 +35,7 @@ http://localhost:8080/api/normalize
 ---
 
 Second exercise
-Distance calculation
+**Distance calculation**
 EX:
 ```http
 http://localhost:8080/api/distanceCalculator/
@@ -44,7 +44,7 @@ http://localhost:8080/api/distanceCalculator/
 ---
 
 Third exercise
-Obtain name of currency
+**Obtain name of currency**
 EX:
 ```http
 http://localhost:8080/api/currencyFinder/
@@ -81,5 +81,5 @@ npm run start
 ## Run as dev
 
 ```sh
-npm run dev
+npm run start:dev
 ```
