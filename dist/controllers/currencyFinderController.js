@@ -16,7 +16,7 @@ exports.currencyFinderController = void 0;
 const axios_1 = __importDefault(require("axios"));
 const currencyFinderController = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const { pais } = req.body;
+        const { pais } = req.params;
         if (pais) {
             const listOfCurrenciesByCode = yield getCurrenciesList();
             const listOfCountriesByCode = yield getCountriesList();

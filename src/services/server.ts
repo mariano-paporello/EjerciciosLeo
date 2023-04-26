@@ -24,7 +24,7 @@ const swaggerDoc = YAML.load(swaggerPath);
 
 // Llamo a las API
 app.use('/api', routers);
-app.use("/", swaggerUi.serve, swaggerUi.setup(swaggerDoc));
+app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerDoc));
 
 const myServer = new http.Server(app);
 

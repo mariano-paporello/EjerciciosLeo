@@ -4,6 +4,6 @@ import { normalizeStreetController } from "../controllers/normalizerController"
 const normalizerRoute = Router()
 
 
-normalizerRoute.get("/", normalizeStreetController)
+normalizerRoute.post("/", normalizeStreetController)
 
 export default normalizerRoute

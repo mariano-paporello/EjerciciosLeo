@@ -1,34 +1,32 @@
 # EjerciciosLeo
 
-### 🏠 [Homepage](https://github.com/mariano-paporello/EjerciciosLeo)
-
 ## Stack
+- App on Node JS. Code in Typescript. Express Server. 
+- Auxiliary Libraries: Axios
 
-<h4 >App on Node JS. Code in Typescript. Express Server.</h4>
-<h4 >Auxiliary Libraries: Axios</h4>
+<br>
 
-<br />
+## Exercises PDF
 
+> <a href="/Ejercicios.pdf" download="Exercises">View Ejercicio</a>
 
-## Exercises pdf
+<br>
 
-<a href="/Ejercicios.pdf" download="Exercises">Ejercicio</a>
-
-<br />
-
-## Endpoints Documentation
-The documentation is in the home endpoint
-EX:
+## Documentation
+The API documentation
 ```http
-http://localhost:8080/
+http://localhost:8080/doc
 ```
-<br />
+---
+Postman Collection 
+> <a href="/DesafioLeo.postman_collection.json" download="PostmanCollection">Download Postman Collection</a>
+
+<br>
 
 ## Endpoints of the Exercises
 
 First exercise
 **Direction normalizer**
-EX:
 ```http
 http://localhost:8080/api/normalize
 ```
@@ -36,18 +34,16 @@ http://localhost:8080/api/normalize
 
 Second exercise
 **Distance calculation**
-EX:
 ```http
-http://localhost:8080/api/distanceCalculator/
+http://localhost:8080/api/distanceCalculator/{direccion}
 ```
 
 ---
 
 Third exercise
 **Obtain name of currency**
-EX:
 ```http
-http://localhost:8080/api/currencyFinder/
+http://localhost:8080/api/currencyFinder/{pais}
 ```
 
 <br />
@@ -58,7 +54,7 @@ http://localhost:8080/api/currencyFinder/
 - node >=16.14.2
 - npm >=8.19.2
 
-<br />
+<br>
 
 ## Install
 

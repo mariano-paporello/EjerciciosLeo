@@ -4,7 +4,7 @@ import { Request, Response } from "express";
 
 export const currencyFinderController = async (req: Request, res: Response) => {
   try {
-    const { pais } = req.body;
+    const { pais } = req.params;
     if (pais) {
       const listOfCurrenciesByCode = await getCurrenciesList();
       const listOfCountriesByCode = await getCountriesList();
@@ -18,7 +18,12 @@ export const currencyFinderController = async (req: Request, res: Response) => {
         const currency = listOfCurrenciesByCode.find(
           (element: { sISOCode: string; sName: string }) => {
             const posibleCurrency = element.sISOCode.slice(0, 2);
-            return country.sISOCode === posibleCurrency;
+            if(country.sISOCode === posibleCurrency){
+              return country.sISOCode === posibleCurrency;
+            }
+            else if(country.sISOCode){
+              return posibleCurrency === "EU"
+            }
           }
         );
         res.status(200).json({

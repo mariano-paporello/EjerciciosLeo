@@ -3,7 +3,7 @@ import { currencyFinderController } from "../controllers/currencyFinderControlle
 
 const currencyFinderRoute = Router()
 
-currencyFinderRoute.get("/", currencyFinderController)
+currencyFinderRoute.get("/:pais", currencyFinderController)
 
 export default currencyFinderRoute
 

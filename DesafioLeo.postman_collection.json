@@ -9,11 +9,8 @@
 	"item": [
 		{
 			"name": "StreetNormalizer",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
@@ -295,11 +292,8 @@
 		},
 		{
 			"name": "distanceCalculator",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
@@ -601,7 +595,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"pais\": \"Brazil\"\r\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -609,7 +603,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/currencyFinder/",
+					"raw": "http://localhost:8080/api/currencyFinder/argentina",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -618,7 +612,7 @@
 					"path": [
 						"api",
 						"currencyFinder",
-						""
+						"argentina"
 					]
 				},
 				"description": "#### **Find the currency of the country entered.**\n\n##### **Obligatory parameters:**\n\n- \"**pais**\": String"

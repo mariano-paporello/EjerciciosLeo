@@ -23,6 +23,6 @@ const swaggerPath = path_1.default.resolve(process.cwd(), "./swagger.yml");
 const swaggerDoc = yamljs_1.default.load(swaggerPath);
 // Llamo a las API
 app.use('/api', index_1.default);
-app.use("/", swagger_ui_express_1.default.serve, swagger_ui_express_1.default.setup(swaggerDoc));
+app.use("/home", swagger_ui_express_1.default.serve, swagger_ui_express_1.default.setup(swaggerDoc));
 const myServer = new http_1.default.Server(app);
 exports.default = myServer;

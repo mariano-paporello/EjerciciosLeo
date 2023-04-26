@@ -3,7 +3,7 @@ import { distanceCalculatorController } from "../controllers/distanceCalculatorC
 
 const distanceCalculatorRoute = Router()
 
-distanceCalculatorRoute.get("/", distanceCalculatorController)
+distanceCalculatorRoute.post("/", distanceCalculatorController)
 
 export default distanceCalculatorRoute
 
